@@ -1,0 +1,41 @@
+# Secrets and keys
+*.pem
+*.key
+id_ed25519*
+id_rsa*
+*.age
+!*.sops.yaml
+.env
+.env.*
+secrets/
+*.vault-password
+.vault_pass
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
+!example.tfvars
+.terraform.lock.hcl.bak
+
+# Ansible
+*.retry
+.ansible/
+ansible/inventory/*.local.*
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Python
+__pycache__/
+.venv/
