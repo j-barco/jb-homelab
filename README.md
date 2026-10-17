@@ -3,7 +3,7 @@
 A personal homelab built to learn and demonstrate **DevOps, infrastructure, cloud and networking** skills.
 Everything is defined as code (Ansible, Terraform, Kubernetes manifests) and documented, including the problems I ran into along the way.
 
-> Status: **Phase 0 - Network foundation** (in progress)
+> Status: **Network foundation** (WIP)
 
 ## Goals
 
@@ -52,34 +52,6 @@ No extra hardware: a single physical NIC with **router on a stick**. OPNsense ru
 | 10 | Management (Proxmox, switch, desktop) |
 | 20 | Servers (K3s, LXC services) |
 | 30 | Clients |
-
-## Roadmap
-
-### Phase 0 - Network
-- [x] Enable VT-x / VT-d in BIOS (see [journal](docs/journal/2026-10-17-virtualization-disabled-in-bios.md))
-- [ ] Back up switch config and Proxmox network config
-- [ ] VLAN-aware bridge on Proxmox
-- [ ] OPNsense VM (WAN + LAN over a single NIC)
-- [ ] Pi-hole in an LXC container
-- [ ] VLANs and firewall rules on the switch
-
-### Phase 1 - Platform
-- [ ] K3s master (VM) + worker (Raspberry Pi) via Ansible
-- [ ] GitHub Actions: basic CI pipeline (multi-arch images)
-- [ ] ArgoCD (GitOps, app-of-apps)
-- [ ] Prometheus + Grafana + Alertmanager
-- [ ] Private registry (Harbor)
-
-### Phase 2 - Cloud and automation
-- [ ] HashiCorp Vault
-- [ ] LocalStack + MinIO
-- [ ] Terraform (LocalStack / AWS free tier, Proxmox provider)
-- [ ] Ansible for all machines
-- [ ] Cloudflare Tunnels
-
-### Phase 3 - Services and observability
-- [ ] ELK Stack (needs more RAM)
-- [ ] Migrate personal services to Kubernetes (Vaultwarden, Paperless-ngx, WireGuard/Tailscale)
 
 ## Repository layout
 
